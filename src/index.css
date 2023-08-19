@@ -24,14 +24,17 @@ a {
 }
 
 .gallery {
-	width: 395.906px;
-	height: 232px;
-	flex-shrink: 0;
-
-  margin-top: 96px;
-
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  margin-top: 30px;
+
+}
+
+.gallery > .images {
+	align-self: center;
+	max-width: 400px;
+}
+
+.gallery > .gallery--header {
+	margin-top: 15px;
 }
