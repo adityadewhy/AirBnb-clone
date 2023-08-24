@@ -41,6 +41,4 @@ export default [
 		location: "Norway",
 		openSpots: 3,
 	},
-];
-
-console.log(typeof Data);
+]
