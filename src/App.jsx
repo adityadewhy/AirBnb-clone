@@ -1,8 +1,8 @@
 import React from "react";
 import Top from "./components/Header.jsx";
 import GalleryGroup from "./components/Head.jsx";
-import data from "../src/data.js";
-import Card from "../src/components/Cards.jsx";
+import data from "./data.js";
+import Card from "./components/Cards.jsx";
 
 export default function App() {
 	const slides = data.map((slide) => {
@@ -13,7 +13,7 @@ export default function App() {
 		<div>
 			<Top />
 			<GalleryGroup />
-      {slides}
+			<section className="slides">{slides}</section>
 		</div>
 	);
 }

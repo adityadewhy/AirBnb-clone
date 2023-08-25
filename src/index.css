@@ -40,3 +40,39 @@ a {
 .gallery > .gallery--header {
 	margin-top: 15px;
 }
+
+
+.badge {
+	/* position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold; */
+
+	background-color: white;
+	padding: 10px 15px;
+}
+
+.slides {
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 20px;
+	overflow: scroll;
+}
+
+.slide {
+	border: 2px solid red;
+}
+
+.card--stats {
+	display: flex;
+	align-items: center;
+}
+
+.card--star {
+	height: 17px;
+}
+
