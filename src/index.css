@@ -29,6 +29,7 @@ a {
   margin: auto;
   margin-top: 30px;
   max-width: 400px;
+  padding: 5px;
 
 }
 
@@ -41,30 +42,36 @@ a {
 	margin-top: 15px;
 }
 
-
-.badge {
-	/* position: absolute;
-    top: 6px;
-    left: 6px;
-    background-color: white;
-    padding: 5px 7px;
-    border-radius: 2px;
-    font-weight: bold; */
-
-	background-color: white;
-	padding: 10px 15px;
-}
-
 .slides {
 	margin-top: 15px;
+	padding: 5px;
 	display: flex;
 	flex-wrap: nowrap;
 	gap: 20px;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .slide {
-	border: 2px solid red;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 260px;
+}
+
+.slideImage {
+	border-radius: 15px;
+}
+
+/* outer radius = inner radius + padding */
+
+.badge {
+	background-color: white;
+	position: absolute;
+	padding: 5px 5px;
+	font-weight: bold;
+	border-radius: 10px;
+	top: 4px;
+	left: 4px;
 }
 
 .card--stats {
@@ -75,4 +82,3 @@ a {
 .card--star {
 	height: 17px;
 }
-
